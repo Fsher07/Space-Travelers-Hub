@@ -1,13 +1,17 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { updateRockets } from '../redux/rockets';
+import { bookRockets, cancelRocketBooking } from '../redux/rockets';
 /* eslint-disable react/prop-types */
 const Rocket = (props) => {
   const { rocket } = props;
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(updateRockets(rocket.id));
+    if (rocket.reserved && rocket.reserved === true) {
+      dispatch(cancelRocketBooking(rocket.id));
+    } else {
+      dispatch(bookRockets(rocket.id));
+    }
   };
 
   return (

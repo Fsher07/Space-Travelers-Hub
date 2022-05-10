@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const GET_ROCKETS = 'GET_ROCKETS';
-const UPDATE_ROCKET = 'UPDATE_ROCKET';
+const BOOK_ROCKET = 'BOOK_ROCKET';
+const CANCEL_ROCKET_BOOKING = 'CANCEL_ROCKET_BOOKING';
 
 const getRocketsFromApi = (success) => {
   axios.get('https://api.spacexdata.com/v3/rockets')
@@ -24,7 +25,7 @@ export const rocketsReducer = (state = initialState, action) => {
         flickr_images: rocket.flickr_images[0],
       }));
       return rockets;
-    case UPDATE_ROCKET:
+    case BOOK_ROCKET:
       rockets = state.map((rocket) => (
         rocket.id !== rocketId
           ? rocket
@@ -44,9 +45,16 @@ export const getRockets = () => (dispatch) => {
   });
 };
 
-export const updateRockets = (id) => (dispatch) => {
+export const bookRockets = (id) => (dispatch) => {
   dispatch({
-    type: UPDATE_ROCKET,
+    type: BOOK_ROCKET,
     payload: id,
   });
 };
+
+export const cancelRocketBooking = (id) => (dispatch) => {
+  dispatch({
+    type: CANCEL_ROCKET_BOOKING,
+    payload: id,
+  });
+}

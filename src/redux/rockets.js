@@ -32,6 +32,13 @@ export const rocketsReducer = (state = initialState, action) => {
           : { ...rocket, reserved: true }
       ));
       return rockets;
+    case CANCEL_ROCKET_BOOKING:
+      rockets = state.map((rocket) => (
+        rocket.id !== rocketId
+          ? rocket
+          : { ...rocket, reserved: false }
+      ));
+      return rockets;
     default: return state;
   }
 };
@@ -57,4 +64,4 @@ export const cancelRocketBooking = (id) => (dispatch) => {
     type: CANCEL_ROCKET_BOOKING,
     payload: id,
   });
-}
+};

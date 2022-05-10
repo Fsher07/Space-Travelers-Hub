@@ -1,11 +1,15 @@
 import { combineReducers, legacy_createStore as createStore, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
+import thunkMiddleware from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { rocketsReducer } from './rockets';
 
 const rootReducer = combineReducers({
   rockets: rocketsReducer,
+  missions: [],
 });
 
-const store = createStore(rootReducer, applyMiddleware(logger));
+const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware));
+
+const store = createStore(rootReducer, composedEnhancer);
 
 export default store;

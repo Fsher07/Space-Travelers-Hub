@@ -1,24 +1,30 @@
-import axios from "axios";
+import axios from 'axios';
 
 const GET_ROCKETS = 'GET_ROCKETS';
 
 const getRocketsFromApi = (success) => {
   axios.get('https://api.spacexdata.com/v3/rockets')
-  .then((res) => {
-    success(res);
-  })
-}
+    .then((res) => {
+      success(res);
+    });
+};
 
-export const rocketsReducer = (state = [], action) => {
-  switch(action.type) {
-    case GET_ROCKETS: 
-      return [
-        ...state,
-        action.payload,
-      ];
+const initialState = [];
+
+export const rocketsReducer = (state = initialState, action) => {
+  let rockets;
+  switch (action.type) {
+    case GET_ROCKETS:
+      rockets = action.payload.map((rocket) => ({
+        id: rocket.id,
+        rocket_name: rocket.rocket_name,
+        description: rocket.description,
+        flickr_images: rocket.flickr_images[0],
+      }));
+      return rockets;
     default: return state;
   }
-}
+};
 
 export const getRockets = () => (dispatch) => {
   getRocketsFromApi((res) => {

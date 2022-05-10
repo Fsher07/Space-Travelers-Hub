@@ -3,3 +3,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.rockets {
+  padding: 2% 5%;
+  gap: 20px;
+  color: rgb(83, 82, 82);
+}
+
+.rocket {
+  gap: 20px;
+}
+
+.rocket-image {
+  width: 200px;
+  height: 150px;
+}
+
+.rocket-details {
+  gap: 10px;
+}
+
+.rocket-details button {
+  width: fit-content;
+  padding: 8px;
+  background: #137fe4;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}

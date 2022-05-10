@@ -12,7 +12,7 @@ const Rockets = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="rockets d-col-flex">
       {
         rockets.length > 0
           ? rockets.map((rocket) => (

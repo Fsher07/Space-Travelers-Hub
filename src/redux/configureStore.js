@@ -1,5 +1,4 @@
 import { combineReducers, legacy_createStore as createStore, applyMiddleware } from 'redux';
-import thunkMiddleware from 'redux-thunk';
 import { missionsReducer } from './missions';
 
 const rootReducer = combineReducers({

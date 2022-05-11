@@ -75,3 +75,7 @@ p {
   background: #fff;
   border: 1px solid #535252;
 }
+
+li {
+  border: 1px solid #ccc;
+}

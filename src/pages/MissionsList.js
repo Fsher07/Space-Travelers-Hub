@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getMissionsAction } from '../redux/missions';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Mission from './Mission';
 import styles from './MissionsList.module.css';
 
 const MissionsList = () => {
   const missions = useSelector((state) => state.missions);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getMissionsAction());
-  }, [dispatch]);
 
   return (
     <ul className="missionsList">

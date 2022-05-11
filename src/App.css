@@ -75,3 +75,25 @@ p {
   background: #fff;
   border: 1px solid #535252;
 }
+
+.my-profile {
+  gap: 20px;
+  width: 50%;
+  font-size: 24px;
+  color: #535252;
+}
+
+.my-profile-display h3 {
+  border: 1px solid #53525247;
+  padding: 10px 10px 20px 10px;
+  font-size: 16px;
+}
+
+.my-profile-display h3:nth-child(even) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.my-profile-display h3:last-child {
+  border-bottom: 1px solid #53525247;
+}

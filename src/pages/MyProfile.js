@@ -6,9 +6,9 @@ const MyProfile = () => {
   const reservedRockets = rockets.filter((rocket) => rocket.reserved === true);
 
   return (
-    <div>
+    <div className="my-profile d-col-flex">
       <h2>My Rockets</h2>
-      <div className="profile-display">
+      <div className="my-profile-display d-col-flex">
         {
           reservedRockets.map((rocket) => (
             <h3 key={rocket.id}>

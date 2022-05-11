@@ -26,7 +26,7 @@ p {
 .rockets {
   padding: 2% 5%;
   gap: 20px;
-  color: rgb(83, 82, 82);
+  color: #535252;
 }
 
 .rocket {
@@ -42,12 +42,36 @@ p {
   gap: 10px;
 }
 
-.rocket-details button {
+.reserve-rocket,
+.cancel-reservation {
+  gap: 10px;
+}
+
+.cancel-reservation span {
+  background: #3fb9cc;
+  color: #fff;
+  padding: 2px;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.reserve-rocket button,
+.cancel-reservation button {
   width: fit-content;
   padding: 8px;
-  background: #137fe4;
   border: none;
   border-radius: 3px;
-  color: #fff;
   cursor: pointer;
+}
+
+.reserve-rocket button {
+  color: #fff;
+  background: #137fe4;
+}
+
+.cancel-reservation button {
+  color: #535252;
+  background: #fff;
+  border: 1px solid #535252;
 }

@@ -5,7 +5,6 @@ import styles from './MissionsList.module.css';
 
 const MissionsList = () => {
   const missions = useSelector((state) => state.missions);
-
   return (
     <ul className={styles.missionContainer}>
       <li className={styles.missionHeader}>

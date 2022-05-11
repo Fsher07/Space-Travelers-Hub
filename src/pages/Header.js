@@ -1,0 +1,40 @@
+import { NavLink } from 'react-router-dom';
+import React from 'react';
+
+const Header = () => (
+  <header>
+    <NavLink to="/">
+      <h1 className="title">Space Travelers Hub</h1>
+    </NavLink>
+    <nav className="header__nav">
+      <ul>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/rockets"
+          >
+            Rockets
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/missions"
+          >
+            Missions
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/myprofile"
+          >
+            Profile
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
+);
+
+export default Header;

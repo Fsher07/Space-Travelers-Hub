@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Missions from '.pages/Missions';
+import MissionsList from './pages/MissionsList';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/missions" element={<Missions />} />
+        <Route path="/missions" element={<MissionsList />} />
       </Routes>
     </div>
   );

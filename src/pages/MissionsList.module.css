@@ -1,0 +1,4 @@
+.missionHeader {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}

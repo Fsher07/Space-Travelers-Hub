@@ -3,3 +3,75 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.rockets {
+  padding: 2% 5%;
+  gap: 20px;
+  color: #535252;
+}
+
+.rocket {
+  gap: 20px;
+}
+
+.rocket-image {
+  width: 200px;
+  height: 150px;
+}
+
+.rocket-details {
+  gap: 10px;
+}
+
+.reserve-rocket,
+.cancel-reservation {
+  gap: 10px;
+}
+
+.cancel-reservation span {
+  background: #3fb9cc;
+  color: #fff;
+  padding: 2px;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.reserve-rocket button,
+.cancel-reservation button {
+  width: fit-content;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reserve-rocket button {
+  color: #fff;
+  background: #137fe4;
+}
+
+.cancel-reservation button {
+  color: #535252;
+  background: #fff;
+  border: 1px solid #535252;
+}

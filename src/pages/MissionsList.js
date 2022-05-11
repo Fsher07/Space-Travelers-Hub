@@ -7,7 +7,6 @@ import styles from './MissionsList.module.css';
 const MissionsList = () => {
   const missions = useSelector((state) => state.missions);
   const dispatch = useDispatch();
-  console.log(missions);
 
   useEffect(() => {
     dispatch(getMissionsAction());

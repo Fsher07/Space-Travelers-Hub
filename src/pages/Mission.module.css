@@ -1,5 +1,57 @@
 .missionRow {
   display: grid;
   grid-template-columns: 1fr 4fr 2fr;
-  border-top: 1px solid #ccc;
+}
+
+.missionRow h3, p, .badge button, span {
+  font-family: sans-serif;
+}
+
+.missionRow:nth-child(2n) {
+  background-color: #ebf3f3;
+}
+
+.missionRow p, .badge {
+  border-left: 1px solid #ccc;
+}
+
+.badge {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.badge .btnLeave {
+  border: 1px solid red;
+  color: red;
+}
+
+.badge button {
+  background-color: transparent;
+  border: 1px solid rgb(38, 38, 53);
+  color: rgb(38, 38, 53);
+  border-radius: 2px;
+  padding: 10px 4px;
+}
+
+.badge span {
+  text-align: center;
+  padding: 2px;
+}
+
+.badgeActive {
+  background-color: #00a65a;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 5px;
+}
+
+.badgeInActive {
+  background-color: #8d8a8a;
+  color: #fff;
+  border-radius: 2px;
+  padding: 2px 5px;
 }

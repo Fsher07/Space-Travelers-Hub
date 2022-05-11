@@ -3,15 +3,25 @@
   grid-template-columns: 1fr 4fr 2fr;
 }
 
-.missionRow h3, p, .badge button, span {
+.missionRow h3,
+p,
+.badge button,
+span {
   font-family: sans-serif;
+}
+
+.missionRow h3,
+p,
+.badge {
+  padding: 0.5rem;
 }
 
 .missionRow:nth-child(2n) {
   background-color: #ebf3f3;
 }
 
-.missionRow p, .badge {
+.missionRow p,
+.badge {
   border-left: 1px solid #ccc;
 }
 

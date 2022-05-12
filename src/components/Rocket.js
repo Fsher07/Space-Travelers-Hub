@@ -5,7 +5,6 @@ import { bookRockets, cancelRocketBooking } from '../redux/rockets';
 const Rocket = (props) => {
   const { rocket } = props;
   const dispatch = useDispatch();
-
   const handleClick = () => {
     if (rocket.reserved && rocket.reserved === true) {
       dispatch(cancelRocketBooking(rocket.id));

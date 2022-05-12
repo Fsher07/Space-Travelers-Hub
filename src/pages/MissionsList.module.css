@@ -1,0 +1,13 @@
+.missionContainer {
+  margin: 1rem 2rem;
+}
+
+.missionHeader {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+
+.missionHeader h3 {
+  border-left: 1px solid #ccc;
+  padding: 0.5rem;
+}

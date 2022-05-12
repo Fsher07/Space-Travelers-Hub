@@ -1,7 +1,9 @@
-.body {
+* {
+  box-sizing: border-box;
+  color: rgb(38, 38, 53);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 ul,
@@ -12,6 +14,10 @@ h4,
 p {
   padding: 0;
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .d-flex {
@@ -83,17 +89,24 @@ p {
   color: #535252;
 }
 
-.my-profile-display h3 {
-  border: 1px solid #53525247;
-  padding: 10px 10px 20px 10px;
-  font-size: 16px;
+li {
+  border: 1px solid #ccc;
 }
 
-.my-profile-display h3:nth-child(even) {
-  border-top: none;
-  border-bottom: none;
+.active {
+  border-bottom: 1px solid #ccc;
 }
 
-.my-profile-display h3:last-child {
-  border-bottom: 1px solid #53525247;
+.profile-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  padding: 2rem;
+}
+
+.profile-mission button {
+  width: 40%;
+  height: 2rem;
+  background-color: transparent;
 }

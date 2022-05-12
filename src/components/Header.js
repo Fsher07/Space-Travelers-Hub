@@ -1,17 +1,23 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
+import styles from './Header.module.css';
+import logoImg from '../assets/planet.png';
 
 const Header = () => (
   <header>
-    <NavLink to="/">
-      <h1 className="title">Space Travelers Hub</h1>
+    <NavLink
+      to="/"
+      className={styles.logoContainer}
+    >
+      <img src={logoImg} alt="logo" className={styles.logo} />
+      <h1 className={styles.title}>Space Travelers Hub</h1>
     </NavLink>
-    <nav className="header__nav">
+    <nav className={styles.navBar}>
       <ul>
         <li>
           <NavLink
             className={({ isActive }) => (isActive ? 'active' : '')}
-            to="/rockets"
+            to="/"
           >
             Rockets
           </NavLink>
@@ -29,7 +35,7 @@ const Header = () => (
             className={({ isActive }) => (isActive ? 'active' : '')}
             to="/myprofile"
           >
-            Profile
+            My Profile
           </NavLink>
         </li>
       </ul>

@@ -5,18 +5,11 @@
 
 .missionRow h3,
 p,
-.badge button,
-span {
-  font-family: sans-serif;
-}
-
-.missionRow h3,
-p,
 .badge {
   padding: 0.5rem;
 }
 
-.missionRow:nth-child(2n) {
+.missionRow:nth-child(even) {
   background-color: #ebf3f3;
 }
 
@@ -42,7 +35,6 @@ p,
 .badge button {
   background-color: transparent;
   border: 1px solid rgb(38, 38, 53);
-  color: rgb(38, 38, 53);
   border-radius: 2px;
   padding: 10px 4px;
 }
@@ -53,7 +45,7 @@ p,
 }
 
 .badgeActive {
-  background-color: #00a65a;
+  background-color: rgb(19, 172, 172);
   color: #fff;
   border-radius: 2px;
   padding: 2px 5px;

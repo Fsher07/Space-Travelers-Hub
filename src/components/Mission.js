@@ -8,7 +8,7 @@ const Mission = (props) => {
   const dispatch = useDispatch();
   const { mission } = props;
   const {
-    id, name, description,
+    id, name, description, reserved,
   } = mission;
   const handleMissionClick = () => {
     if (mission.reserved === true) {
@@ -21,7 +21,7 @@ const Mission = (props) => {
     <li className={styles.missionRow}>
       <h3>{name}</h3>
       <p>{description}</p>
-      {mission.reserved === true ? (
+      {reserved ? (
         <div className={styles.badge}>
           <span className={styles.badgeActive}>Active Member</span>
           <button type="button" className={styles.btnLeave} onClick={handleMissionClick}>Leave Mission</button>

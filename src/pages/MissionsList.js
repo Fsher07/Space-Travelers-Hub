@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Mission from './Mission';
+import Mission from '../components/Mission';
 import styles from './MissionsList.module.css';
 
 const MissionsList = () => {

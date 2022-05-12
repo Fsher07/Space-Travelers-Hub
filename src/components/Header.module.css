@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin: 2rem;
+}
+
+.logoContainer {
+  border: none;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(19, 172, 172);
+  font-size: 2.5rem;
+  border: none;
+}
+
+.navBar ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.navBar ul li {
+  list-style: none;
+  border: none;
+}
+
+.logo {
+  width: 10vw;
+}

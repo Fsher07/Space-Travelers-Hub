@@ -12,8 +12,9 @@ export const getMissions = (success) => {
       success(response);
     });
 };
+const initialState = [];
 
-export const missionsReducer = (state = [], action) => {
+export const missionsReducer = (state = initialState, action) => {
   let missions;
   switch (action.type) {
     case GET_MISSIONS:

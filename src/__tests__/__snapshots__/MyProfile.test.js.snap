@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing the rendering of my profile page renders rocket and missions 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <h2>
+        My Missions
+      </h2>
+      <span
+        class="nothing"
+      >
+        <span>
+          You have not joined any missions
+        </span>
+      </span>
+    </div>
+    <div>
+      <h2>
+        My Rockets
+      </h2>
+    </div>
+  </div>
+</div>
+`;

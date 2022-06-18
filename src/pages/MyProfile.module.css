@@ -1,0 +1,16 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 4rem;
+  grid-gap: 3rem;
+}
+
+.container div h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.container div span {
+  font-size: 1.5rem;
+}

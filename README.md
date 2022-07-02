@@ -1,6 +1,6 @@
 # Space Traveler's Hub
 
-> This website is for a company that provides commercial and scientific space travel services. TThe website allow users to book rockets and join selected space missions.
+> This website is for a company that provides commercial and scientific space travel services. The website allow users to book rockets and join selected space missions.
 
 ## Built With
 

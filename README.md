@@ -7,6 +7,9 @@
 - React
 - Redux
 
+## Live Demo
+> [Project Link](https://delightful-granita-29f9c1.netlify.app/)
+
 ## Getting Started
 
  You can simply clone or download [this repository](https://github.com/Fsher07/Space-Travelers-Hub.git), and use your favorite browser or code editor to run this program.
